@@ -1,0 +1,42 @@
+<?php
+namespace Neos\Form\Tests\Functional\Fixtures\FormFactories;
+
+/*
+ * This file is part of the Neos.Form package.
+ *
+ * (c) Contributors of the Neos Project - www.neos.io
+ *
+ * This package is Open Source Software. For the full copyright and license
+ * information, please view the LICENSE file which was distributed with this
+ * source code.
+ */
+
+use Neos\Flow\Annotations as Flow;
+
+/**
+ * Simple form for testing
+ */
+class TestingFormBuildingFinishedFactory extends \Neos\Form\Factory\ArrayFormFactory
+{
+    public function build(array $configuration, $presetName)
+    {
+        $configuration = array(
+            'type' => 'Neos.Form:Form',
+            'identifier' => 'testing',
+            'label' => 'My Label',
+            'renderables' => array(
+                array(
+                    'type' => 'Neos.Form:Page',
+                    'identifier' => 'general',
+                    'renderables' => array(
+                        array(
+                            'type' => 'Neos.Form:TestingFormElementWithSubElements',
+                            'identifier' => 'subel',
+                        )
+                    )
+                )
+            )
+        );
+        return parent::build($configuration, $presetName);
+    }
+}

@@ -1,0 +1,24 @@
+Neos:
+  Flow:
+    mvc:
+      routes:
+        # Override this to false to not add the SEO routes.
+        'Neos.Seo':
+          variables:
+            # Override this to change the uri to the sitemap
+            xmlSitemapPath: 'sitemap.xml'
+  Neos:
+    fusion:
+      autoInclude:
+        'Neos.Seo': TRUE
+
+    userInterface:
+      translation:
+        autoInclude:
+          'Neos.Seo': ['NodeTypes/*']
+
+  Seo:
+    # Twitter Card settings
+    twitterCard:
+      # the Twitter handle for the twitter:site attribution
+      siteHandle: ~

@@ -1,0 +1,16 @@
+
+Neos:
+  RedirectHandler:
+    features:
+      hitCounter: true
+    statusCode:
+      redirect: 307
+      gone: 410
+  Flow:
+    http:
+      chain:
+        process:
+          chain:
+            redirect:
+              position: 'after routing'
+              component: Neos\RedirectHandler\RedirectComponent

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="ru">
+    <body>
+      <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
+				<source>XML Sitemap</source>
+			<target xml:lang="ru">Карта сайта в XML</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
+				<source>Change frequency</source>
+			<target xml:lang="ru">Частота изменений</target><alt-trans><target xml:lang="ru">Частота изменения</target></alt-trans></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
+				<source>Priority</source>
+			<target xml:lang="ru">Приоритет</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>between 0 and 1</source>
+			<target xml:lang="ru">между 0 и 1</target></trans-unit>
+    </body>
+  </file>
+</xliff>
